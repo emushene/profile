@@ -4,3 +4,13 @@
   display: border-box;
 
 }
+.nav-bar {
+  display: flex;
+  background-color: aqua;
+
+
+}
+
+.nav-header {
+
+}
