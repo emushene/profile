@@ -2,15 +2,78 @@
   padding: 0;
   margin: 0;
   display: border-box;
-
+  background-color: transparent !important;
+  
 }
+#top-content {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  flex-direction: column ;
+  
+}
+
 .nav-bar {
   display: flex;
-  background-color: aqua;
-
-
+  flex-direction: column ;
+  position: fixed;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  background-image: url(https://lh3.googleusercontent.com/14LbBbfhnGAKZKHuWPcgrt8Mu3BCWflMrmOtchh8C_kHeFfkOlJR0NRQJUqmJVUW2NEiK8GZuxnbWXSOh9YirYCuBVpIpFHk0GrxMveLoarw9oo68Q2n3gneuryPlxap98cKIsKEZY5mNtezdIeK9jdOH5_y-2xWiLkCpkI2yYUupW0EEumRHKkKfRmJrfObCsv-IqyrWgJBvzwL05KzHlrAxM9RUsnTfrcQRmEpZ_WNr-P6UetCQgNCBONrLJm_NZ3LtiyDDW9_3h_6dAkm4P_FsUVYNfttSRe3nTEmAT09EUYDpxBN_JbRAuwQ_z5Zlz5G6ztriMUazDGSXHDqQqSwdIhpBXfruaBwQyTRHvD95BZXu1ZY_Doh4AGtQwzIHZsj-PBFZKOF7rkIu-_c-uCYOwb65v9hX_rKg9dtfS8p7cGGiyuhSKOIc38NMPRjOw8Xix7eMrAEBJcdUPYgnEhNTypF1n3hTrvUNOXjCED8hiGsp35NQqcLvYBpxIuWzrXgzbzuo7_1Sfkkd3uRntU7XUOBOy8WspAOzjW10HBMCHoM4kc4CxZjg-dv2ieE_9U6HtCTjlxXKc_nCVJcKYQOK_6B0MxIg65Bs50iEOfMvxZj6y7DAfUEHeYSUXJqLTEww85ebXJrw8gOM2SR_dA5zZUnjLq_O5ipAL_QJAxrLy-SEunV9rz6KIqZ-dsD5yFwBm5svHyuHETA6isDo5P7gD8ic9fK4TfKXlsVPnnD4igswf8RQb3-4tpkkQ=w1920-h420-no?authuser=0);
+  justify-items: center;
+  width: 98%;
+  height: 350px;
+  margin: 10px 20px;
+  }
+.logo {
+  margin: 2rem;
+  height: 100px;
+  opacity: 0.75;
+}
+.nav-header {
+  display: flex;
+  margin: 10px 30px 10px 100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background: hsl(0 0% 100% /0.1);
+  backdrop-filter: blur(0.1rem);
 }
 
-.nav-header {
+.links {
+  display: flex;
+  gap: var(--gap, 2rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-body {
+  display: flex;
+  align-items: center;
+  color: white;
+   background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 92%;
+  background-size: cover;
+  margin: 10px 30px 10px 100px;
+  
+}
+
+@media (max-width: 35em) {
+  .nav-header {
+    --gap: 2em;
+    position: fixed;
+    inset: 0 0 0 30% ;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    
+  }
 }
